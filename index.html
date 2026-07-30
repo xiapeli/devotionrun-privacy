@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Política de Privacidade — DevotionRun</title>
+  <title>Política de Privacidade — Devotion Run</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -103,157 +103,201 @@
 
   <div class="logo">
     <div class="logo-icon">✝️</div>
-    <span class="logo-text">DevotionRun</span>
+    <span class="logo-text">Devotion Run</span>
   </div>
 
   <!-- Portuguese -->
   <div id="portuguese">
     <div class="lang-switch"><a href="#" onclick="toggleLang(); return false;">Read in English</a></div>
     <h1>Política de Privacidade</h1>
-    <p class="updated">Última atualização: março de 2026</p>
+    <p class="updated">Última atualização: 30 de julho de 2026</p>
 
     <div class="highlight">
-      <p>Resumo: O DevotionRun armazena seus dados de corrida e devocionais no iCloud da Apple. <strong>Não compartilhamos, vendemos ou monetizamos seus dados com terceiros.</strong></p>
+      <p>Resumo: O Devotion Run armazena seus dados de corrida e devocionais no seu dispositivo e no seu iCloud privado. <strong>Não vendemos seus dados, não exibimos anúncios e não rastreamos você entre apps.</strong> Usamos apenas diagnóstico de falhas (Sentry) e analytics anônimo de uso (TelemetryDeck) para melhorar o app.</p>
     </div>
 
     <h2>1. Quem somos</h2>
-    <p>DevotionRun é desenvolvido e mantido por Phelipe Xavier (GoGrowth Lab). Para qualquer dúvida sobre privacidade, entre em contato pelo e-mail <a href="mailto:phelipe@gogrowth.me">phelipe@gogrowth.me</a>.</p>
+    <p>O Devotion Run é desenvolvido e mantido por Phelipe Xavier (GoGrowth Lab). Para qualquer dúvida sobre privacidade, entre em contato pelo e-mail <a href="mailto:feedback@devotion.run">feedback@devotion.run</a>.</p>
 
     <h2>2. Dados que coletamos</h2>
-    <p>O app coleta apenas o que é necessário para funcionar:</p>
+    <p>O app coleta apenas o que é necessário para funcionar. O Devotion Run não exige criação de conta nem login:</p>
     <ul>
-      <li><strong>Dados de atividade física:</strong> distância percorrida, duração, ritmo (pace), calorias estimadas e rota GPS durante corridas.</li>
+      <li><strong>Dados de atividade física:</strong> distância percorrida, duração, ritmo (pace), calorias estimadas e rota GPS durante corridas. Esses dados ficam no seu dispositivo.</li>
       <li><strong>Dados de saúde:</strong> salvamos seus treinos e minutos de atenção plena (mindfulness) no Apple Health, com sua permissão explícita.</li>
-      <li><strong>Conteúdo do usuário:</strong> intenções de oração e reflexões pós-corrida que você escreve.</li>
-      <li><strong>Perfil:</strong> nome e foto de perfil fornecidos durante o onboarding.</li>
-      <li><strong>Localização:</strong> GPS durante a corrida, em primeiro plano e em segundo plano (para continuar o rastreamento com a tela bloqueada).</li>
+      <li><strong>Conteúdo do usuário:</strong> intenções de oração, reflexões pós-corrida, favoritos e progresso nos devocionais.</li>
+      <li><strong>Gravações de voz:</strong> se você gravar reflexões em áudio, as gravações ficam armazenadas somente no seu dispositivo. Elas nunca são enviadas para nossos servidores ou para terceiros.</li>
+      <li><strong>Perfil:</strong> nome e foto de perfil fornecidos durante o onboarding (armazenados localmente e no seu iCloud privado).</li>
+      <li><strong>Localização:</strong> GPS durante a corrida, em primeiro plano e em segundo plano (para continuar o rastreamento com a tela bloqueada). Sua localização é processada somente no dispositivo e nunca é enviada para nossos servidores.</li>
+      <li><strong>Dados de diagnóstico:</strong> relatórios de falha (crash) e erros técnicos, via Sentry, não vinculados à sua identidade.</li>
+      <li><strong>Analytics anônimo de uso:</strong> eventos de uso do produto (ex.: "corrida iniciada", "devocional concluído"), via TelemetryDeck, de forma anônima.</li>
     </ul>
 
     <h2>3. Como usamos os dados</h2>
     <ul>
       <li>Exibir suas estatísticas de corrida, progresso e histórico dentro do app.</li>
-      <li>Salvar seus treinos no Apple Health (somente com sua autorização).</li>
-      <li>Sincronizar seus dados entre dispositivos via iCloud/CloudKit.</li>
+      <li>Salvar seus treinos e minutos de atenção plena no Apple Health (somente com sua autorização).</li>
+      <li>Sincronizar favoritos, progresso e reflexões entre dispositivos via iCloud/CloudKit.</li>
       <li>Entregar o devocional do dia com base na data atual.</li>
+      <li>Corrigir falhas e melhorar a estabilidade do app (dados de diagnóstico).</li>
+      <li>Entender quais recursos são usados para melhorar o produto (analytics anônimo).</li>
     </ul>
-    <p>Não utilizamos seus dados para publicidade, analytics de terceiros ou qualquer outra finalidade além das listadas acima.</p>
+    <p>Não utilizamos seus dados para publicidade nem para rastreamento entre apps e sites de terceiros, e não usamos seus dados para nenhuma finalidade além das listadas acima.</p>
 
     <h2>4. Onde os dados ficam armazenados</h2>
-    <p>Todos os dados pessoais são armazenados de duas formas:</p>
+    <p>Seus dados pessoais são armazenados de duas formas:</p>
     <ul>
-      <li><strong>Localmente no dispositivo:</strong> dados de corrida e configurações ficam no armazenamento privado do app.</li>
-      <li><strong>iCloud (CloudKit):</strong> para sincronização entre dispositivos, usamos o CloudKit da Apple no banco de dados privado do usuário. Somente você tem acesso a esses dados — nem a Apple nem a DevotionRun consegue ler seu conteúdo privado do CloudKit.</li>
+      <li><strong>Localmente no dispositivo:</strong> dados de corrida, rotas GPS, gravações de voz e configurações ficam no armazenamento privado do app.</li>
+      <li><strong>iCloud (CloudKit):</strong> para sincronização entre dispositivos, usamos o CloudKit da Apple no banco de dados privado da sua conta iCloud (favoritos, progresso e reflexões). Somente você tem acesso a esses dados — nem a Apple nem o Devotion Run consegue ler seu conteúdo privado do CloudKit.</li>
     </ul>
 
-    <h2>5. Compartilhamento de dados</h2>
-    <div class="highlight">
-      <p>Não vendemos, alugamos nem compartilhamos seus dados com terceiros. Ponto final.</p>
-    </div>
-    <p>A única exceção é o Apple Health: quando você autoriza, seus treinos são salvos lá e ficam sujeitos à Política de Privacidade da Apple.</p>
+    <h2>5. Diagnóstico e analytics (Sentry e TelemetryDeck)</h2>
+    <p>Para manter o app estável e melhorá-lo, usamos dois serviços:</p>
+    <ul>
+      <li><strong>Sentry (relatórios de falha):</strong> quando o app trava ou encontra um erro, informações técnicas de diagnóstico são enviadas ao Sentry — por exemplo, modelo do dispositivo, versão do iOS, versão do app e o rastreamento técnico do erro. Esses dados <strong>não são vinculados à sua identidade</strong> e não incluem seu conteúdo pessoal (reflexões, rotas, dados de saúde).</li>
+      <li><strong>TelemetryDeck (analytics anônimo):</strong> coletamos eventos anônimos de uso do produto (ex.: quais telas e recursos são usados) para entender como melhorar o app. O TelemetryDeck é focado em privacidade: os dados são anonimizados, <strong>não há identificação do usuário nem rastreamento entre apps ou sites</strong>.</li>
+    </ul>
+    <p>Nenhum desses serviços recebe sua localização, seus dados de saúde, suas gravações de voz ou o conteúdo das suas reflexões.</p>
 
-    <h2>6. Permissões do sistema</h2>
+    <h2>6. Assinaturas e pagamentos</h2>
+    <p>O Devotion Run oferece a assinatura opcional <strong>Devotion Run Pro</strong>, processada inteiramente pela Apple via App Store (StoreKit). O pagamento é gerenciado pela sua conta Apple: <strong>não temos acesso ao seu cartão, dados bancários ou informações de pagamento</strong>. As transações estão sujeitas à Política de Privacidade da Apple. Detalhes de preço, teste grátis e cancelamento estão nos <a href="terms.html">Termos de Uso</a>.</p>
+
+    <h2>7. Compartilhamento de dados</h2>
+    <div class="highlight">
+      <p>Não vendemos nem alugamos seus dados. Não exibimos anúncios. Não compartilhamos seus dados pessoais com terceiros para fins de marketing.</p>
+    </div>
+    <p>Os únicos terceiros que recebem dados são prestadores de serviço estritamente necessários:</p>
+    <ul>
+      <li><strong>Apple:</strong> Apple Health (quando você autoriza), iCloud/CloudKit (seu banco privado) e App Store (assinaturas) — sujeitos à Política de Privacidade da Apple.</li>
+      <li><strong>Sentry:</strong> apenas dados técnicos de diagnóstico de falhas, não vinculados à sua identidade.</li>
+      <li><strong>TelemetryDeck:</strong> apenas eventos de uso anônimos.</li>
+    </ul>
+
+    <h2>8. Permissões do sistema</h2>
     <p>O app solicita as seguintes permissões:</p>
     <ul>
       <li><strong>Localização (em uso e em segundo plano):</strong> rastrear distância e rota durante a corrida, mesmo com a tela bloqueada.</li>
       <li><strong>HealthKit (leitura e escrita):</strong> salvar workouts e minutos de atenção plena; ler dados de frequência cardíaca (se disponível).</li>
+      <li><strong>Microfone:</strong> gravar reflexões em áudio (opcional; gravações ficam somente no dispositivo).</li>
       <li><strong>Notificações:</strong> lembretes opcionais para sua corrida devocional diária.</li>
     </ul>
-    <p>Você pode revogar qualquer permissão a qualquer momento em Ajustes → DevotionRun.</p>
+    <p>Você pode revogar qualquer permissão a qualquer momento em Ajustes → Devotion Run.</p>
 
-    <h2>7. Retenção e exclusão de dados</h2>
+    <h2>9. Retenção e exclusão de dados</h2>
     <p>Seus dados permanecem no dispositivo e no iCloud enquanto o app estiver instalado. Para apagar tudo:</p>
     <ul>
-      <li>Acesse Ajustes → DevotionRun → Apagar minha conta.</li>
-      <li>Ou desinstale o app e apague os dados do iCloud em Ajustes → [seu nome] → iCloud → Gerenciar Armazenamento → DevotionRun → Apagar dados.</li>
+      <li>Desinstale o app (remove os dados locais, incluindo gravações de voz).</li>
+      <li>Apague os dados do iCloud em Ajustes → [seu nome] → iCloud → Gerenciar Armazenamento → Devotion Run → Apagar dados.</li>
     </ul>
-    <p>Dados salvos no Apple Health não são apagados automaticamente — você pode removê-los diretamente no app Saúde.</p>
+    <p>Dados salvos no Apple Health não são apagados automaticamente — você pode removê-los diretamente no app Saúde. Dados anônimos de diagnóstico e analytics não podem ser vinculados a você e, por isso, não são passíveis de exclusão individual.</p>
 
-    <h2>8. Privacidade de menores</h2>
-    <p>O DevotionRun é destinado a usuários com 4 anos ou mais. Não coletamos intencionalmente dados de crianças menores de 13 anos sem consentimento dos responsáveis.</p>
+    <h2>10. Privacidade de menores</h2>
+    <p>O Devotion Run é destinado a usuários com 4 anos ou mais. Não coletamos intencionalmente dados de crianças menores de 13 anos sem consentimento dos responsáveis.</p>
 
-    <h2>9. Alterações nesta política</h2>
+    <h2>11. Alterações nesta política</h2>
     <p>Notificaremos sobre mudanças relevantes via atualização no App Store ou notificação no app. A data de "última atualização" no topo sempre reflete a versão vigente.</p>
 
-    <h2>10. Contato</h2>
-    <p>Dúvidas, solicitações de exclusão ou qualquer questão sobre privacidade: <a href="mailto:phelipe@gogrowth.me">phelipe@gogrowth.me</a></p>
+    <h2>12. Contato</h2>
+    <p>Dúvidas, solicitações de exclusão ou qualquer questão sobre privacidade: <a href="mailto:feedback@devotion.run">feedback@devotion.run</a></p>
 
     <hr class="divider" />
-    <p style="color:#444; font-size:13px;">© 2026 GoGrowth Lab · DevotionRun · <a href="mailto:phelipe@gogrowth.me">phelipe@gogrowth.me</a></p>
+    <p style="color:#444; font-size:13px;">© 2026 GoGrowth Lab · Devotion Run · <a href="mailto:feedback@devotion.run">feedback@devotion.run</a></p>
   </div>
 
   <!-- English -->
   <div id="english">
     <div class="lang-switch"><a href="#" onclick="toggleLang(); return false;">Ler em Português</a></div>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: March 2026</p>
+    <p class="updated">Last updated: July 30, 2026</p>
 
     <div class="highlight">
-      <p>Summary: DevotionRun stores your running and devotional data in Apple iCloud. <strong>We do not share, sell, or monetize your data with third parties.</strong></p>
+      <p>Summary: Devotion Run stores your running and devotional data on your device and in your private iCloud. <strong>We do not sell your data, show ads, or track you across apps.</strong> We only use crash diagnostics (Sentry) and anonymous usage analytics (TelemetryDeck) to improve the app.</p>
     </div>
 
     <h2>1. Who we are</h2>
-    <p>DevotionRun is developed and maintained by Phelipe Xavier (GoGrowth Lab). For any privacy questions, contact us at <a href="mailto:phelipe@gogrowth.me">phelipe@gogrowth.me</a>.</p>
+    <p>Devotion Run is developed and maintained by Phelipe Xavier (GoGrowth Lab). For any privacy questions, contact us at <a href="mailto:feedback@devotion.run">feedback@devotion.run</a>.</p>
 
     <h2>2. Data we collect</h2>
-    <p>The app collects only what is necessary to function:</p>
+    <p>The app collects only what is necessary to function. Devotion Run does not require an account or login:</p>
     <ul>
-      <li><strong>Activity data:</strong> distance, duration, pace, estimated calories, and GPS route during runs.</li>
+      <li><strong>Activity data:</strong> distance, duration, pace, estimated calories, and GPS route during runs. This data stays on your device.</li>
       <li><strong>Health data:</strong> we save your workouts and mindfulness minutes to Apple Health, with your explicit permission.</li>
-      <li><strong>User content:</strong> prayer intentions and post-run reflections you write.</li>
-      <li><strong>Profile:</strong> name and profile photo provided during onboarding.</li>
-      <li><strong>Location:</strong> GPS during runs, in foreground and background (to continue tracking with screen locked).</li>
+      <li><strong>User content:</strong> prayer intentions, post-run reflections, favorites, and devotional progress.</li>
+      <li><strong>Voice recordings:</strong> if you record audio reflections, the recordings are stored only on your device. They are never uploaded to our servers or to third parties.</li>
+      <li><strong>Profile:</strong> name and profile photo provided during onboarding (stored locally and in your private iCloud).</li>
+      <li><strong>Location:</strong> GPS during runs, in foreground and background (to continue tracking with screen locked). Your location is processed on-device only and is never sent to our servers.</li>
+      <li><strong>Diagnostic data:</strong> crash reports and technical errors, via Sentry, not linked to your identity.</li>
+      <li><strong>Anonymous usage analytics:</strong> product usage events (e.g. "run started", "devotional completed"), via TelemetryDeck, in anonymous form.</li>
     </ul>
 
     <h2>3. How we use data</h2>
     <ul>
       <li>Display your running statistics, progress, and history within the app.</li>
-      <li>Save your workouts to Apple Health (only with your authorization).</li>
-      <li>Sync your data across devices via iCloud/CloudKit.</li>
+      <li>Save your workouts and mindfulness minutes to Apple Health (only with your authorization).</li>
+      <li>Sync favorites, progress, and reflections across devices via iCloud/CloudKit.</li>
       <li>Deliver the daily devotional based on the current date.</li>
+      <li>Fix crashes and improve app stability (diagnostic data).</li>
+      <li>Understand which features are used so we can improve the product (anonymous analytics).</li>
     </ul>
-    <p>We do not use your data for advertising, third-party analytics, or any purpose beyond those listed above.</p>
+    <p>We do not use your data for advertising or cross-app/cross-site tracking, and we do not use your data for any purpose beyond those listed above.</p>
 
     <h2>4. Data storage</h2>
-    <p>All personal data is stored in two ways:</p>
+    <p>Your personal data is stored in two ways:</p>
     <ul>
-      <li><strong>Locally on device:</strong> run data and settings are stored in the app's private storage.</li>
-      <li><strong>iCloud (CloudKit):</strong> for cross-device sync, we use Apple's CloudKit in the user's private database. Only you have access to this data — neither Apple nor DevotionRun can read your private CloudKit content.</li>
+      <li><strong>Locally on device:</strong> run data, GPS routes, voice recordings, and settings are stored in the app's private storage.</li>
+      <li><strong>iCloud (CloudKit):</strong> for cross-device sync, we use Apple's CloudKit in your iCloud account's private database (favorites, progress, and reflections). Only you have access to this data — neither Apple nor Devotion Run can read your private CloudKit content.</li>
     </ul>
 
-    <h2>5. Data sharing</h2>
-    <div class="highlight">
-      <p>We do not sell, rent, or share your data with third parties. Period.</p>
-    </div>
-    <p>The only exception is Apple Health: when you authorize it, your workouts are saved there and subject to Apple's Privacy Policy.</p>
+    <h2>5. Diagnostics and analytics (Sentry and TelemetryDeck)</h2>
+    <p>To keep the app stable and improve it, we use two services:</p>
+    <ul>
+      <li><strong>Sentry (crash reporting):</strong> when the app crashes or hits an error, technical diagnostic information is sent to Sentry — for example, device model, iOS version, app version, and the technical error trace. This data is <strong>not linked to your identity</strong> and does not include your personal content (reflections, routes, health data).</li>
+      <li><strong>TelemetryDeck (anonymous analytics):</strong> we collect anonymous product usage events (e.g. which screens and features are used) to understand how to improve the app. TelemetryDeck is privacy-focused: data is anonymized, and there is <strong>no user identification and no tracking across apps or websites</strong>.</li>
+    </ul>
+    <p>Neither of these services receives your location, health data, voice recordings, or the content of your reflections.</p>
 
-    <h2>6. System permissions</h2>
+    <h2>6. Subscriptions and payments</h2>
+    <p>Devotion Run offers the optional <strong>Devotion Run Pro</strong> subscription, processed entirely by Apple via the App Store (StoreKit). Payment is handled by your Apple account: <strong>we never have access to your card, banking details, or payment information</strong>. Transactions are subject to Apple's Privacy Policy. Pricing, free trial, and cancellation details are in the <a href="terms.html">Terms of Use</a>.</p>
+
+    <h2>7. Data sharing</h2>
+    <div class="highlight">
+      <p>We do not sell or rent your data. We do not show ads. We do not share your personal data with third parties for marketing purposes.</p>
+    </div>
+    <p>The only third parties that receive data are strictly necessary service providers:</p>
+    <ul>
+      <li><strong>Apple:</strong> Apple Health (when you authorize it), iCloud/CloudKit (your private database), and the App Store (subscriptions) — subject to Apple's Privacy Policy.</li>
+      <li><strong>Sentry:</strong> technical crash diagnostic data only, not linked to your identity.</li>
+      <li><strong>TelemetryDeck:</strong> anonymous usage events only.</li>
+    </ul>
+
+    <h2>8. System permissions</h2>
     <p>The app requests the following permissions:</p>
     <ul>
       <li><strong>Location (in use and background):</strong> track distance and route during runs, even with screen locked.</li>
       <li><strong>HealthKit (read and write):</strong> save workouts and mindfulness minutes; read heart rate data (if available).</li>
+      <li><strong>Microphone:</strong> record audio reflections (optional; recordings stay on device only).</li>
       <li><strong>Notifications:</strong> optional reminders for your daily devotional run.</li>
     </ul>
-    <p>You can revoke any permission at any time in Settings → DevotionRun.</p>
+    <p>You can revoke any permission at any time in Settings → Devotion Run.</p>
 
-    <h2>7. Retention and deletion</h2>
+    <h2>9. Retention and deletion</h2>
     <p>Your data remains on device and in iCloud while the app is installed. To delete everything:</p>
     <ul>
-      <li>Go to Settings → DevotionRun → Delete my account.</li>
-      <li>Or uninstall the app and delete iCloud data at Settings → [your name] → iCloud → Manage Storage → DevotionRun → Delete data.</li>
+      <li>Uninstall the app (removes local data, including voice recordings).</li>
+      <li>Delete iCloud data at Settings → [your name] → iCloud → Manage Storage → Devotion Run → Delete data.</li>
     </ul>
-    <p>Data saved to Apple Health is not automatically deleted — you can remove it directly in the Health app.</p>
+    <p>Data saved to Apple Health is not automatically deleted — you can remove it directly in the Health app. Anonymous diagnostic and analytics data cannot be linked back to you and therefore cannot be individually deleted.</p>
 
-    <h2>8. Children's privacy</h2>
-    <p>DevotionRun is rated 4+. We do not knowingly collect data from children under 13 without parental consent.</p>
+    <h2>10. Children's privacy</h2>
+    <p>Devotion Run is rated 4+. We do not knowingly collect data from children under 13 without parental consent.</p>
 
-    <h2>9. Changes to this policy</h2>
+    <h2>11. Changes to this policy</h2>
     <p>We will notify you of significant changes via an App Store update or in-app notification. The "last updated" date at the top always reflects the current version.</p>
 
-    <h2>10. Contact</h2>
-    <p>Questions, deletion requests, or any privacy matter: <a href="mailto:phelipe@gogrowth.me">phelipe@gogrowth.me</a></p>
+    <h2>12. Contact</h2>
+    <p>Questions, deletion requests, or any privacy matter: <a href="mailto:feedback@devotion.run">feedback@devotion.run</a></p>
 
     <hr class="divider" />
-    <p style="color:#444; font-size:13px;">© 2026 GoGrowth Lab · DevotionRun · <a href="mailto:phelipe@gogrowth.me">phelipe@gogrowth.me</a></p>
+    <p style="color:#444; font-size:13px;">© 2026 GoGrowth Lab · Devotion Run · <a href="mailto:feedback@devotion.run">feedback@devotion.run</a></p>
   </div>
 
 </div>
